@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PersonDetail: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var dataManager: DataManager
+//    @EnvironmentObject var dataManager: DataManager
     
     var person: DukePerson
     

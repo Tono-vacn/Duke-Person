@@ -31,6 +31,14 @@
 		AEDA3CAD2CA63F0F0008910D /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CAC2CA63F0F0008910D /* ToastModifier.swift */; };
 		AEDA3CB02CA671E30008910D /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CAF2CA671E30008910D /* TeamView.swift */; };
 		AEDA3CB32CB2141A0008910D /* NoTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CB22CB2141A0008910D /* NoTabBarView.swift */; };
+		AEDA3CB52CBA46BE0008910D /* BackPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CB42CBA46BE0008910D /* BackPersonView.swift */; };
+		AEDA3CB72CBA519C0008910D /* DoubleSidePersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CB62CBA519C0008910D /* DoubleSidePersonCard.swift */; };
+		AEDA3CB92CBB56970008910D /* FlipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CB82CBB56970008910D /* FlipCard.swift */; };
+		AEDA3CBC2CBB5A900008910D /* Pedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CBB2CBB5A900008910D /* Pedal.swift */; };
+		AEDA3CBE2CBB5AFC0008910D /* AnimatedFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CBD2CBB5AFC0008910D /* AnimatedFlower.swift */; };
+		AEDA3CC02CBB615A0008910D /* ColorChangingSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CBF2CBB615A0008910D /* ColorChangingSeparator.swift */; };
+		AEDA3CC22CBB623B0008910D /* MovingBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CC12CBB623B0008910D /* MovingBall.swift */; };
+		AEDA3CC42CBB77FC0008910D /* DotTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA3CC32CBB77FC0008910D /* DotTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +67,14 @@
 		AEDA3CAE2CA663BD0008910D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AEDA3CAF2CA671E30008910D /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		AEDA3CB22CB2141A0008910D /* NoTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTabBarView.swift; sourceTree = "<group>"; };
+		AEDA3CB42CBA46BE0008910D /* BackPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackPersonView.swift; sourceTree = "<group>"; };
+		AEDA3CB62CBA519C0008910D /* DoubleSidePersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSidePersonCard.swift; sourceTree = "<group>"; };
+		AEDA3CB82CBB56970008910D /* FlipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCard.swift; sourceTree = "<group>"; };
+		AEDA3CBB2CBB5A900008910D /* Pedal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedal.swift; sourceTree = "<group>"; };
+		AEDA3CBD2CBB5AFC0008910D /* AnimatedFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedFlower.swift; sourceTree = "<group>"; };
+		AEDA3CBF2CBB615A0008910D /* ColorChangingSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangingSeparator.swift; sourceTree = "<group>"; };
+		AEDA3CC12CBB623B0008910D /* MovingBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingBall.swift; sourceTree = "<group>"; };
+		AEDA3CC32CBB77FC0008910D /* DotTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +189,7 @@
 		AEDA3C992CA63AAA0008910D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				AEDA3CBA2CBB5A280008910D /* BackCardView */,
 				AEDA3C9C2CA63AE80008910D /* ContentView */,
 				AEDA3C9B2CA63ACD0008910D /* AddEditView */,
 				AEDA3C9A2CA63AC00008910D /* Common */,
@@ -204,6 +221,9 @@
 				AEDA3CA52CA63C3D0008910D /* PersonDetail.swift */,
 				AEDA3CA72CA63C830008910D /* MainSearchBar.swift */,
 				AEDA3CA92CA63CAE0008910D /* CustomProgressView.swift */,
+				AEDA3CB42CBA46BE0008910D /* BackPersonView.swift */,
+				AEDA3CB62CBA519C0008910D /* DoubleSidePersonCard.swift */,
+				AEDA3CB82CBB56970008910D /* FlipCard.swift */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";
@@ -222,6 +242,18 @@
 				AEDA3CB22CB2141A0008910D /* NoTabBarView.swift */,
 			);
 			path = ViewTemplate;
+			sourceTree = "<group>";
+		};
+		AEDA3CBA2CBB5A280008910D /* BackCardView */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA3CBB2CBB5A900008910D /* Pedal.swift */,
+				AEDA3CBD2CBB5AFC0008910D /* AnimatedFlower.swift */,
+				AEDA3CBF2CBB615A0008910D /* ColorChangingSeparator.swift */,
+				AEDA3CC12CBB623B0008910D /* MovingBall.swift */,
+				AEDA3CC32CBB77FC0008910D /* DotTimer.swift */,
+			);
+			path = BackCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDA3CB52CBA46BE0008910D /* BackPersonView.swift in Sources */,
+				AEDA3CBE2CBB5AFC0008910D /* AnimatedFlower.swift in Sources */,
+				AEDA3CC42CBB77FC0008910D /* DotTimer.swift in Sources */,
+				AEDA3CC22CBB623B0008910D /* MovingBall.swift in Sources */,
+				AEDA3CC02CBB615A0008910D /* ColorChangingSeparator.swift in Sources */,
 				AEDA3CA82CA63C830008910D /* MainSearchBar.swift in Sources */,
 				AEDA3CAD2CA63F0F0008910D /* ToastModifier.swift in Sources */,
 				AEDA3CA02CA63B660008910D /* Toast.swift in Sources */,
@@ -312,7 +349,9 @@
 				AEDA3C752CA5E6E40008910D /* Item.swift in Sources */,
 				AEDA3C822CA5F1E00008910D /* Person.swift in Sources */,
 				AEDA3CA62CA63C3D0008910D /* PersonDetail.swift in Sources */,
+				AEDA3CBC2CBB5A900008910D /* Pedal.swift in Sources */,
 				AEDA3C922CA6380A0008910D /* utils.swift in Sources */,
+				AEDA3CB72CBA519C0008910D /* DoubleSidePersonCard.swift in Sources */,
 				AEDA3C9E2CA63B3E0008910D /* Avatar.swift in Sources */,
 				AEDA3C842CA5F98D0008910D /* PersonEnums.swift in Sources */,
 				AEDA3C8A2CA5FB3A0008910D /* Error.swift in Sources */,
@@ -320,6 +359,7 @@
 				AEDA3C982CA6395F0008910D /* AddEditView.swift in Sources */,
 				AEDA3C712CA5E6E40008910D /* YuchenApp.swift in Sources */,
 				AEDA3CB32CB2141A0008910D /* NoTabBarView.swift in Sources */,
+				AEDA3CB92CBB56970008910D /* FlipCard.swift in Sources */,
 				AEDA3C902CA5FE870008910D /* authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
