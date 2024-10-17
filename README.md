@@ -42,17 +42,29 @@ This app includes one main page to display the list of people and a detail page 
     - Add global toast to show the message.
     - Customized progress indicator style.
 
-- HW5:
+- Finished in HW5:
+    
+    - switch persistence from fileurl to SwiftData
+    - redesigned project structure
+    - add teams view
+
+  - Extra for HW5
+    - implemented DAO singleton to handle data access
+    - split data model and view model completely
+
+  - Fix for HW5:
+    - fixed email validation issue
+    - fixed lName, fName capitalization issue
+    - fixed DUID, NetID valid input issue
+
+- HW6:
   
-  - switch persistence from fileurl to SwiftData
-  - redesigned project structure
-  - add teams view
-
-- Extra for HW5
-  - implemented DAO singleton to handle data access
-  - split data model and view model completely
-
-- Fix for HW5:
-  - fixed email validation issue
-  - fixed lName, fName capitalization issue
-  - fixed DUID, NetID valid input issue
+  - Add backcard for person detail view
+  - Add the ability to flip the card
+  - Add dynamic vector animation in backcard
+  - Add Attributed Text in backcard
+  - Add An Image (Raster graphic) in backcard
+  - Add Animation to an Image in backcard
+- Extra for HW6:
+  - a dot clock in the backcard
+  - a dynamic vector animation of an opening flower in the backcard

@@ -124,7 +124,14 @@ struct ContentView: View {
                                     Section(header: Text(key).font(.headline)) {
                                         ForEach(groupedPersons[key]!) { person in
                                             NavigationLink {
-                                                PersonDetail(person: person).environmentObject(dataManager)
+//                                                PersonDetail(person: person).environmentObject(dataManager)
+                                                DoubleSidePersonCard(person: person)
+                                                    .environmentObject(dataManager)
+                                                    .onDisappear {
+                                                        withAnimation(.easeInOut(duration: 0.6)) {
+                                                            animateReturn.toggle()
+                                                        }
+                                                    }
                                             } label: {
                                                 PersonEntryRow(person: person)
                                             }
@@ -217,7 +224,7 @@ struct ContentView: View {
                 TeamView().environmentObject(dataManager).tabItem { Label("Teams", systemImage: "person.3.fill") }
             }
 //            .opacity(dataManager.showTab ? 1 : 0)
-//            ECE564Login()
+            ECE564Login()
             
             if dataManager.isDownloading {
                 Color.black.opacity(0.4)

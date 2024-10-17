@@ -47,10 +47,12 @@ struct BackPersonView: View {
                         .frame(width: 50, height: 50)
                         .foregroundColor(.yellow)
                 }
-                ColorChangingSeparatorReverse()
-//                    .frame(width:100, height: 4)
-//                    .fixedSize()
-                                .padding(.horizontal, 20)
+                
+               
+//                ColorChangingSeparatorReverse()
+////                    .frame(width:100, height: 4)
+////                    .fixedSize()
+//                                .padding(.horizontal, 20)
                 // 3. 动画图片
 //                Image(systemName: "flame.fill")
 //                    .resizable()
@@ -65,16 +67,16 @@ struct BackPersonView: View {
 //                    .onAppear {
 //                        animateImage = true
 //                    }
-                
-                
-                
-                // 4. 矢量图形
+
                 AnimatedFlower()
                                .frame(width: 100, height: 100)
                                .shadow(radius: 5)
                 Spacer().frame(height: 20)
-//                MovingBall().frame(width: 100, height: 100)
+                MovingBall().frame(width: 100, height: 30)
+                
                 TimeView().padding()
+                
+                
             }
             .padding()
             .background(

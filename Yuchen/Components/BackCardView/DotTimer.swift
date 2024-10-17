@@ -124,20 +124,31 @@ struct ColonView: View {
 
 struct TimeView: View {
     @State private var currentTime: String = ""
-    
     var body: some View {
         HStack(spacing: 8) {
-            ForEach(currentTime.map { String($0) }, id: \.self) { char in
-                if let digit = Int(char) {
+            ForEach(Array(currentTime.enumerated()), id: \.offset) { index, element in
+                if let digit = Int(String(element)) {
                     DigitView(digit: digit)
                 } else {
-                    // 如果需要显示冒号等符号，可以创建额外的视图
                     ColonView()
                 }
             }
         }
         .onAppear(perform: updateTime)
     }
+    //    var body: some View {
+    //        HStack(spacing: 8) {
+    //            ForEach(currentTime.map { String($0) }, id: \.self) { char in
+    //                if let digit = Int(char) {
+    //                    DigitView(digit: digit)
+    //                } else {
+    //                    // 如果需要显示冒号等符号，可以创建额外的视图
+    //                    ColonView()
+    //                }
+    //            }
+    //        }
+    //        .onAppear(perform: updateTime)
+    //    }
     
     func updateTime() {
         // 初始化时间并启动定时器
